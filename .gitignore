@@ -21,3 +21,6 @@
 !docs/*/*/*/*
 !docs/*/*/*/*/*
 !docs/*/*/*/*/*/*
+!img/
+!img/*
+!bibliography.bib
