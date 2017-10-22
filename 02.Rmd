@@ -78,6 +78,8 @@ One device, the control group, would have a traditional assistant like the Amazo
 The others will get the humanoid assistant with a video screen that shows the simulated actor.
 Based on the data collected from each interaction and transaction, we can examine if the users with the humanoid assistant had more engagement.
 
+**Note:** Consent shall be required to use any model created out of the likeness of any human before using it in production.
+
 ## Future Work
 
 If this approach shows feasibility, there are many avenues for further optimization.
