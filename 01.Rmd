@@ -92,6 +92,16 @@ These models can therefore be excepted to perform well when compared with the cu
 There remain other potential sources of error, as there are complexities not captured by the encodings
 Among them are actual 3D conformations, affinity for *in vivo* metabolic proteins, and the shapes and energies of the molecular orbitals.
 
+There is a bias in the data.
+Due to the historical prevalence of Lipinski's rules, chemists tend to make molecules that are compliant with these rules.
+As a result, the data disproportionately represents molecules that conform to those rules, causing a favoritism for those molecules already supported by the existing rules.
+In effect, there is a lack of "exploration".
+The model has not seen enough examples of radically different molecules in order to find broader patterns.
+The model has basically re-learned the same rules.
+In order to combat this, some existing examples might need to be downsampled and more data collected.
+
+## Conclusion
+
 By exploring the various ways to encode molecules as vectors and matrices, they became eligible as inputs for machine learning.
 Several representations including structural, dipolar, and functional information enabled classifiers to select promising candidates for drug optimization.
 These models can enable medicinal chemisty researchers to more judiciously choose which analogs to synthesize and test for drug efficacy.
