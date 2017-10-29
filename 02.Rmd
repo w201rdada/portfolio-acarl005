@@ -21,14 +21,14 @@ The purpose of this project is to explore how recent advancements in big data, m
 can further increase the engagement and convenience of online retail, just as the internet heralded the shift to e-commerce.
 One emergent technology along these lines is the home virtual assistant, devices that use a "natural language" interface.
 You can command them with your voice in your natural language, as if you were speaking to another human (sort of).
-Incarnations of this idea include the Amazon Echo, Google Home, and the Apply HomePod.
+Incarnations of this idea include the Amazon Echo, Google Home, and the Apple HomePod.
 These devices do more than just tell you the weather and manage your calendar.
 You can give them a credit card and then ask them to make purchases for you—from things like shaving cream, to pizza, and even plane tickets.
 ```{r echo=FALSE, out.width='50%', fig.align="center"}
 knitr::include_graphics('./img/google-assistant-buy.jpeg')
 ```
 The virtual assistant platform has incredible potential to drive engagement with retailers, as they can provide ancillary services like maintaining your shopping list and alerting you when prices or fares drop.
-Given the enough data, perhaps your mother's Facebook page, it might be able to recommend a good Christmas gift for her.
+Given the enough data, and perhaps your mother's Facebook page, it might be able to recommend a good Christmas gift for her.
 These devices have yet to rise to preeminent adoption.
 For now it remains a highly promising avenue for customer interaction.
 
@@ -58,7 +58,7 @@ This technique has already been demonstrated to create videos of speeches from P
 Generative techniques can be used to project facial movements from any *source actor's* face onto a *target actor*, like as President Donald Trump or Vladimir Putin, demonstrated [here](https://www.theverge.com/2016/12/20/14022958/ai-image-manipulation-creation-fakes-audio-video). [@trump]
 We can use these techniques to create an audio/video-based assistant resembling a familiar figure. These videos would be generated instantly during conversation on their home device or smartphone to convey the responses from the virtual assistant.
 They can be entirely adaptive, dynamic, and computationally generated thanks to machine learning.
-Since hours of high-resolution video data are required for training, prominent Movie or TV stars would be ideal targets as there are many hours of video footage of them to train on.
+Since abundant, good quality video data are required for training, prominent Movie or TV stars would be ideal targets as there are many hours of high-resolution video footage of them to train on.
 Models for various types of actors will be trained: males and females, young and old, good and evil (we assume actors like Morgan Freeman would be considered more "good" than Christopher Walken because Walken seems to always play the villain).
 
 ## Validating the Models
@@ -73,7 +73,7 @@ If the models are accepted, that is, they cannot be distinguished from the real 
 ## Deploying the Models
 
 At this point, the goal is to determine if these models can increase engagement and in turn increase sales.
-A cohort of "beta testers" can be recruited to try a hypothetical new virtual home assistant featuring integrations with online stores like Amazon.com
+A cohort of "beta testers" can be recruited to try a hypothetical new virtual home assistant featuring integrations with online stores like Amazon.com.
 One device, the control group, would have a traditional assistant like the Amazon Echo Dot.
 The others will get the humanoid assistant with a video screen that shows the simulated actor.
 Based on the data collected from each interaction and transaction, we can examine if the users with the humanoid assistant had more engagement.
