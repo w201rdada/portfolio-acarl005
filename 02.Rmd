@@ -54,7 +54,7 @@ GANs are an unsupervised learning algorithm that comprises two models, one that 
 knitr::include_graphics('./img/redshank.png')
 ```
 
-This technique has already been demonstrated to create videos of speeches from President Obama. [@obama]
+This technique has already been demonstrated to create [videos of speeches from President Obama](https://www.theverge.com/2017/7/12/15957844/ai-fake-video-audio-speech-obama). [@obama]
 Generative techniques can be used to project facial movements from any *source actor's* face onto a *target actor*, like as President Donald Trump or Vladimir Putin, demonstrated [here](https://www.theverge.com/2016/12/20/14022958/ai-image-manipulation-creation-fakes-audio-video). [@trump]
 We can use these techniques to create an audio/video-based assistant resembling a familiar figure. These videos would be generated instantly during conversation on their home device or smartphone to convey the responses from the virtual assistant.
 They can be entirely adaptive, dynamic, and computationally generated thanks to machine learning.
