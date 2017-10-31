@@ -86,7 +86,8 @@ If this approach shows feasibility, there are many avenues for further optimizat
 Apart from Morgan Freeman, which types of actors should be shown?
 Are some actors going to be more favored by certain demographics of consumer?
 Can other sensors be used other than just the microphone listening to the users' words?
-Perhaps an infrared face scanner, similar to the technology slated for the iPhone X, could be used to gauge the users' reactions from facial expressions (which may differ from what they **say**).
+Perhaps an infrared face scanner, similar to the technology slated for the iPhone X,
+could be used to gauge the users' reactions from their facial expressions (which may differ from what they **say**).
 
 
 ## Conclusion
