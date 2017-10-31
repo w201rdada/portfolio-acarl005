@@ -24,4 +24,5 @@
 !img/
 !img/*
 !bibliography.bib
-!ISSUE_TEMPLATE*
+!.github/
+!.github/*
