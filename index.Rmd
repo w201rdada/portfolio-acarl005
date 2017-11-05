@@ -28,13 +28,29 @@ Pariatur sapiente anim  waistcoat bicycle rights.  Cupidatat  chambray portland 
 knitr::include_url('https://drive.google.com/file/d/0B6bobRDQR96iVEV3SXJJal9CczQ/preview')
 ```
 
-### Abstract of my first cool idea
+### Abstract of "New Drug Development Rules"
 
-Pop-up occupy labore, pug tofu nisi franzen YOLO tilde tumblr deep v nulla  aliqua.  Sapiente stumptown et lo-fi art party.  Eu  snackwave glossier, poutine crucifix tattooed labore thundercats hexagon tempor brunch single-origin coffee synth four loko.  Velit  beard ex etsy migas, tempor hashtag.  Live-edge fap yr food truck, heirloom snackwave tempor laborum green juice man bun selvage sriracha gastropub.  Before they sold out incididunt godard cupidatat  exercitation street art health goth ullamco, flannel dolore kombucha bespoke.  Pok pok tilde mixtape, magna swag iceland tote bag gentrify dolor  delectus.
+Pharmaceutical drugs are among the most renowned discoveries in modern medicine.
+For example, antibiotics make short work of infectious diseases that used to bewilder physicians.
+However, the discovery and development of new drugs impeded by the enormous cost of research,
+which is about $2.6 billion (twice what it was 10 years ago).
+One of the reasons the costs are so high is the sheer number of experiments and dedicated hours required to find suitable candidates for clinical trials.
+Another reason is that only about 10% of these candidates pass clinical trials.
+Chemists need rules and guidelines to help reduce the number of experiments they need to run.
+This will help them produce candidates more quickly and increase their chances of being effective enough to pass clinical trials.
+The existing rules that are generally used are dated, originating in 1997.
+Using today's affordances in data and computing power, we propose using data science and machine learning to train newer, more complex classifiers for good drug candidates.
+This insight can reduce the costs of researching new drugs, and hopefully get more affordable drugs on the market.
 
-### Abstract of my second cool idea
+### Abstract of "Humanoid Virtual Assistant"
 
-Vero dolor  franzen letterpress.  Taxidermy pork belly messenger bag, deserunt  aliqua irure  photo booth neutra banh mi fanny pack.  Butcher fam heirloom marfa.  Tilde reprehenderit  snackwave tempor.  Qui  pop-up kitsch dolor.  Crucifix consectetur culpa  lumbersexual salvia exercitation small batch.  Pop-up duis  id  semiotics before they sold out kombucha raclette, twee selvage pitchfork.
+The shift to data-driven E-commerce is the most sensational paradigm shift in retail in the past two decades.
+As a result, sites like Amazon.com are now dominating the retail market share,
+beating traditional big-box retailers like Walmart and Target.
+Herein we propose a potential avenue for using more recent advancements in machine learning to further improve the engagement and convenience of the E-commerce platform.
+In order to build upon the promise of natural language-based virtual assistants,
+we describe the use of Generative Adversarial Networks to simulate human faces and voices to improve their appeal to consumers.
+We describe how we might validate, iterate, and find optimal assistants to increase engagement with the assistant, and ultimately increase sales revenue.
   
 ### Abstract of my third cool idea
 
