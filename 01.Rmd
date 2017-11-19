@@ -108,5 +108,3 @@ Several representations including structural, dipolar, and functional informatio
 These models can enable medicinal chemisty researchers to more judiciously choose which analogs to synthesize and test for drug efficacy.
 Such insights reduce the number of experiments that have to be conducted, bring down costs, and increase the likelihood of clinical trial success.
 
-
-

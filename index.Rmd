@@ -5,6 +5,7 @@ date: "MIDS Fall 2017"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: bibliography.bib
+link-citations: true
 ---
 
 <!-- This won't be displayed but it will initialize your R session. Add any R libraries you need here. -->
@@ -15,7 +16,7 @@ library(magrittr)
 
 # Welcome!
 
-This site contains the data-related musings of Andrew Carlson, a student of the (MIDS program) at [Cal Berkeley](http://www.berkeley.edu/).
+This site contains the data-related musings of Andrew Carlson, a student of the [MIDS program](https://www.ischool.berkeley.edu/programs/mids) at [Cal Berkeley](http://www.berkeley.edu/).
 These are a couple of ideas I'd like to explore.
 Have any suggestions, comments, or gripes?
 Some links to contact me online can be found on the left.
