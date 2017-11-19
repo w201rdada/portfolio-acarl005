@@ -32,7 +32,7 @@
   
   
 <link rel="prev" href="drug-rules.html">
-<link rel="next" href="slug-three.html">
+
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -61,7 +61,7 @@
       <nav role="navigation">
 
 <ul class="summary">
-<li><a href="./">Oski Bear</a></li>
+<li><a href="./">Andrew Carlson</a></li>
 
 <li class="divider"></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Welcome!</a><ul>
@@ -72,6 +72,7 @@
 <li class="chapter" data-level="" data-path="drug-rules.html"><a href="drug-rules.html#models-for-recognizing-drug-likeness"><i class="fa fa-check"></i>Models for Recognizing “Drug-likeness”</a></li>
 <li class="chapter" data-level="" data-path="drug-rules.html"><a href="drug-rules.html#capabilities-of-the-model"><i class="fa fa-check"></i>Capabilities of the Model</a></li>
 <li class="chapter" data-level="" data-path="drug-rules.html"><a href="drug-rules.html#conclusion"><i class="fa fa-check"></i>Conclusion</a></li>
+<li class="chapter" data-level="" data-path="drug-rules.html"><a href="drug-rules.html#references"><i class="fa fa-check"></i>References</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="morgan-freeman-assistant.html"><a href="morgan-freeman-assistant.html"><i class="fa fa-check"></i>Humanoid Virtual Assistant</a><ul>
 <li class="chapter" data-level="" data-path="morgan-freeman-assistant.html"><a href="morgan-freeman-assistant.html#finding-a-new-retail-paradigm"><i class="fa fa-check"></i>Finding a New Retail Paradigm</a></li>
@@ -81,16 +82,10 @@
 <li class="chapter" data-level="" data-path="morgan-freeman-assistant.html"><a href="morgan-freeman-assistant.html#future-work"><i class="fa fa-check"></i>Future Work</a></li>
 <li class="chapter" data-level="" data-path="morgan-freeman-assistant.html"><a href="morgan-freeman-assistant.html#conclusion-1"><i class="fa fa-check"></i>Conclusion</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="slug-three.html"><a href="slug-three.html"><i class="fa fa-check"></i>My third cool idea</a><ul>
-<li class="chapter" data-level="" data-path="slug-three.html"><a href="slug-three.html#a-beginning."><i class="fa fa-check"></i>A beginning.</a></li>
-<li class="chapter" data-level="" data-path="slug-three.html"><a href="slug-three.html#a-middle."><i class="fa fa-check"></i>A middle.</a></li>
-<li class="chapter" data-level="" data-path="slug-three.html"><a href="slug-three.html#an-end."><i class="fa fa-check"></i>An end.</a></li>
-</ul></li>
 <li class="divider"></li>
-<li><a href="https://github.com/oskibear" target="blank">GitHub</a></li>
-<li><a href="https://www.ischool.berkeley.edu/people/oski-bear" target="blank">UC Berkeley</a></li>
-<li><a href="https://www.linkedin.com/in/oskibear/" target="blank">LinkedIn</a></li>
-<li><a href="https://www.wired.com/2013/02/friendster-autopsy/" target="blank">Friendster</a></li>        
+<li><a href="https://github.com/acarl005" target="blank">GitHub</a></li>
+<li><a href="https://www.ischool.berkeley.edu/people/andrew-carlson" target="blank">UC Berkeley</a></li>
+<li><a href="https://www.linkedin.com/in/acarl005/" target="blank">LinkedIn</a></li>
 
 </ul>
 
@@ -117,15 +112,15 @@
 </div>
 <div id="finding-a-new-retail-paradigm" class="section level2">
 <h2>Finding a New Retail Paradigm</h2>
-<p>Retailers are constantly seeking and experimenting with advancements in commerce to attract customers. Two of the most salient of advancements in past couple of decades is e-commerce <span class="citation">(Commerce 2017)</span>, using the internet as a platform for buying and selling products and services, and data-driven decision-making <span class="citation">(Davenport 2006)</span>. It’s innovations like these that enable Amazon.com to beat the classic big-box retailers like Walmart and Target. <span class="citation">(Berk 2016)</span></p>
+<p>Retailers are constantly seeking and experimenting with advancements in commerce to attract customers. Two of the most salient of advancements in past couple of decades is e-commerce <span class="citation">(Commerce <a href="#ref-sales-census">2017</a>)</span>, using the internet as a platform for buying and selling products and services, and data-driven decision-making <span class="citation">(Davenport <a href="#ref-competing-analytics">2006</a>)</span>. It’s innovations like these that enable Amazon.com to beat the classic big-box retailers like Walmart and Target. <span class="citation">(Berk <a href="#ref-holiday-market-share">2016</a>)</span></p>
 <p><img src="img/amazon-sales.jpeg" width="50%" style="display: block; margin: auto;" /></p>
 <p>The purpose of this project is to explore potential applications of recent advancements in big data, machine learning, and mobile computing in further increasing the engagement and convenience of online retail. One emergent technology along these lines is the home virtual assistant, devices that use a “natural language” interface. You can command them with your voice in your natural language, as if speaking to another human (sort of). Incarnations of this idea include the Amazon Echo and Google Home. These devices do more than just tell you the weather and manage your calendar. You can give them a credit card and then ask them to make purchases for you—from things like shaving cream, to pizza, and even plane tickets.</p>
 <p><img src="img/google-assistant-buy.jpeg" width="50%" style="display: block; margin: auto;" /></p>
-<p>The virtual assistant platform has incredible potential to drive engagement with retailers, but these devices have yet to rise to preeminent adoption. In order for the virtual assistant platform to live up to this promise, the user experience is of paramount importance, and the details matter. Is the average consumer really going to enjoy talking to a disembodied, robotic voice? What improvements can be made to increase adoption? We can look to other tech platforms for ideas on how to increase engagement. For example, on the Facebook news feed, people are more likely to view a post if it contains emojis or pictures/videos of people. <span class="citation">(McGarry 2016)</span> Users are drawn to the faces and voices of people, especially those that are familiar. In a similar manner, we hypothesize that users will engage more with a personal assistant with a human face and voice—an experience akin to a human conversation. This builds upon natural language interfaces and makes them <em>natural conversations</em>. To create realistic simulations of humans, we can utilize a class of <strong>generative</strong> machine learning models. Herein we propose methods for implementing and testing humanoid voice assistants with the goals of driving up user engagement in order to reach the ultimate goal of increasing sales revenue.</p>
+<p>The virtual assistant platform has incredible potential to drive engagement with retailers, but these devices have yet to rise to preeminent adoption. In order for the virtual assistant platform to live up to this promise, the user experience is of paramount importance, and the details matter. Is the average consumer really going to enjoy talking to a disembodied, robotic voice? What improvements can be made to increase adoption? We can look to other tech platforms for ideas on how to increase engagement. For example, on the Facebook news feed, people are more likely to view a post if it contains emojis or pictures/videos of people. <span class="citation">(McGarry <a href="#ref-facebook-algorithm">2016</a>)</span> Users are drawn to the faces and voices of people, especially those that are familiar. In a similar manner, we hypothesize that users will engage more with a personal assistant with a human face and voice—an experience akin to a human conversation. This builds upon natural language interfaces and makes them <em>natural conversations</em>. To create realistic simulations of humans, we can utilize a class of <strong>generative</strong> machine learning models. Herein we propose methods for implementing and testing humanoid voice assistants with the goals of driving up user engagement in order to reach the ultimate goal of increasing sales revenue.</p>
 </div>
 <div id="generative-machine-learning" class="section level2">
 <h2>Generative Machine Learning</h2>
-<p>We believe a milestone in achieving a better user experience for virtual assistants is to enhance their interactions with realistic faces and voices. In order to do this, we can use a class of machine learning models called <a href="https://en.wikipedia.org/wiki/Generative_adversarial_network#cite_note-1">Generative Adversarial Networks</a> (GAN), proposed in 2014. <span class="citation">(Ian J. Goodfellow 2014)</span> GANs are an unsupervised models that can create new, authentic-looking data based on its training examples. This technique has already been demonstrated to create <a href="https://www.theverge.com/2017/7/12/15957844/ai-fake-video-audio-speech-obama">videos of speeches from President Obama</a>. <span class="citation">(Vincent 2017)</span> Generative techniques can be used to project facial movements from any <em>source actor’s</em> face onto a <em>target actor</em>, like as President Donald Trump or Vladimir Putin, demonstrated <a href="https://www.theverge.com/2016/12/20/14022958/ai-image-manipulation-creation-fakes-audio-video">here</a>. <span class="citation">(Vincent 2016)</span></p>
+<p>We believe a milestone in achieving a better user experience for virtual assistants is to enhance their interactions with realistic faces and voices. In order to do this, we can use a class of machine learning models called <a href="https://en.wikipedia.org/wiki/Generative_adversarial_network#cite_note-1">Generative Adversarial Networks</a> (GAN), proposed in 2014. <span class="citation">(Ian J. Goodfellow <a href="#ref-GANs">2014</a>)</span> GANs are an unsupervised models that can create new, authentic-looking data based on its training examples. This technique has already been demonstrated to create <a href="https://www.theverge.com/2017/7/12/15957844/ai-fake-video-audio-speech-obama">videos of speeches from President Obama</a>. <span class="citation">(Vincent <a href="#ref-obama">2017</a>)</span> Generative techniques can be used to project facial movements from any <em>source actor’s</em> face onto a <em>target actor</em>, like as President Donald Trump or Vladimir Putin, demonstrated <a href="https://www.theverge.com/2016/12/20/14022958/ai-image-manipulation-creation-fakes-audio-video">here</a>. <span class="citation">(Vincent <a href="#ref-trump">2016</a>)</span></p>
 <p>We can use these techniques to create an audio/video-based assistant to run on their home device or mobile phone. Since abundant, good quality video data are required for training, prominent Movie or TV stars would be ideal targets as there are many hours of high-resolution video footage of them to train on. Models for various types of actors will be trained: males and females, young and old, good and evil (we assume actors like Morgan Freeman would be considered more “good” than Christopher Walken because Walken seems to always play the villain).</p>
 </div>
 <div id="validating-the-models" class="section level2">
@@ -145,6 +140,53 @@
 <h2>Conclusion</h2>
 <p>We have discussed the need to utilize modern technologies to innovate the customer interfaces in e-commerce. One promising technology is to evolve natural language interfaces into natural conversations, which involve a simulation of a human face and voice, inspired by developments in social media. We describe the generative algorithms that could produce candidates for such a virtual assistant. This lays the groundwork for testing if such an interface can improve sales online.</p>
 
+<div id="refs" class="references">
+<div>
+<p>Berk, Christina Cheddar. 2016. “Amazon Grabbing the Bulk of Surging Online Sales This Holiday.” December. <a href="https://www.cnbc.com/2016/12/23/amazon-grabbing-the-bulk-of-surging-online-sales-this-holiday.html" class="uri">https://www.cnbc.com/2016/12/23/amazon-grabbing-the-bulk-of-surging-online-sales-this-holiday.html</a>.</p>
+</div>
+<div>
+<p>Commerce, U.S. Department of. 2017. “Quarterly Retail E-Commerce Sales 2nd Quarter 2017.” August. <a href="https://www.census.gov/retail/mrts/www/data/pdf/ec_current.pdf" class="uri">https://www.census.gov/retail/mrts/www/data/pdf/ec_current.pdf</a>.</p>
+</div>
+<div>
+<p>Davenport, Thomas H. 2006. “Competing on Analytics.” <em>Harvard Business Review</em>, January. <a href="https://www.study.net/r_mat.asp?mat_id=50043065&amp;Crs_ID=30115201&amp;check=passed" class="uri">https://www.study.net/r_mat.asp?mat_id=50043065&amp;Crs_ID=30115201&amp;check=passed</a>.</p>
+</div>
+<div>
+<p>Ian J. Goodfellow, Mehdi Mirza, Jean Pouget-Abadie. 2014. “Generative Adversarial Networks.” June. <a href="https://arxiv.org/pdf/1406.2661.pdf" class="uri">https://arxiv.org/pdf/1406.2661.pdf</a>.</p>
+</div>
+<div>
+<p>McGarry, Gavin. 2016. “Hacking the Algorithm – Inside Facebook’s Secret Promotional Code.” PowerPoint Presentation.</p>
+</div>
+<div>
+<p>Vincent, James. 2016. “Artificial Intelligence Is Going to Make It Easier Than Ever to Fake Images and Video.” December. <a href="https://www.theverge.com/2016/12/20/14022958/ai-image-manipulation-creation-fakes-audio-video" class="uri">https://www.theverge.com/2016/12/20/14022958/ai-image-manipulation-creation-fakes-audio-video</a>.</p>
+</div>
+<div>
+<p>———. 2017. “New Ai Research Makes It Easier to Create Fake Footage of Someone Speaking.” July. <a href="https://www.theverge.com/2017/7/12/15957844/ai-fake-video-audio-speech-obama" class="uri">https://www.theverge.com/2017/7/12/15957844/ai-fake-video-audio-speech-obama</a>.</p>
+</div>
+</div>
+</div>
+</div>
+<h3>References</h3>
+<div id="refs" class="references">
+<div id="ref-sales-census">
+<p>Commerce, U.S. Department of. 2017. “Quarterly Retail E-Commerce Sales 2nd Quarter 2017.” August. <a href="https://www.census.gov/retail/mrts/www/data/pdf/ec_current.pdf" class="uri">https://www.census.gov/retail/mrts/www/data/pdf/ec_current.pdf</a>.</p>
+</div>
+<div id="ref-competing-analytics">
+<p>Davenport, Thomas H. 2006. “Competing on Analytics.” <em>Harvard Business Review</em>, January. <a href="https://www.study.net/r_mat.asp?mat_id=50043065&amp;Crs_ID=30115201&amp;check=passed" class="uri">https://www.study.net/r_mat.asp?mat_id=50043065&amp;Crs_ID=30115201&amp;check=passed</a>.</p>
+</div>
+<div id="ref-holiday-market-share">
+<p>Berk, Christina Cheddar. 2016. “Amazon Grabbing the Bulk of Surging Online Sales This Holiday.” December. <a href="https://www.cnbc.com/2016/12/23/amazon-grabbing-the-bulk-of-surging-online-sales-this-holiday.html" class="uri">https://www.cnbc.com/2016/12/23/amazon-grabbing-the-bulk-of-surging-online-sales-this-holiday.html</a>.</p>
+</div>
+<div id="ref-facebook-algorithm">
+<p>McGarry, Gavin. 2016. “Hacking the Algorithm – Inside Facebook’s Secret Promotional Code.” PowerPoint Presentation.</p>
+</div>
+<div id="ref-GANs">
+<p>Ian J. Goodfellow, Mehdi Mirza, Jean Pouget-Abadie. 2014. “Generative Adversarial Networks.” June. <a href="https://arxiv.org/pdf/1406.2661.pdf" class="uri">https://arxiv.org/pdf/1406.2661.pdf</a>.</p>
+</div>
+<div id="ref-obama">
+<p>Vincent, James. 2017. “New Ai Research Makes It Easier to Create Fake Footage of Someone Speaking.” July. <a href="https://www.theverge.com/2017/7/12/15957844/ai-fake-video-audio-speech-obama" class="uri">https://www.theverge.com/2017/7/12/15957844/ai-fake-video-audio-speech-obama</a>.</p>
+</div>
+<div id="ref-trump">
+<p>Vincent, James. 2016. “Artificial Intelligence Is Going to Make It Easier Than Ever to Fake Images and Video.” December. <a href="https://www.theverge.com/2016/12/20/14022958/ai-image-manipulation-creation-fakes-audio-video" class="uri">https://www.theverge.com/2016/12/20/14022958/ai-image-manipulation-creation-fakes-audio-video</a>.</p>
 </div>
 </div>
             </section>
@@ -152,8 +194,8 @@
           </div>
         </div>
       </div>
-<a href="drug-rules.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="slug-three.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="drug-rules.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -169,7 +211,7 @@ gitbook.start({
 "sharing": {
 "github": false,
 "facebook": false,
-"twitter": false,
+"twitter": "https://twitter.com/acarl005",
 "google": false,
 "weibo": false,
 "instapper": false,
@@ -182,7 +224,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/w201rdada/portfolio-MYGITHUBUSER/edit/master/02.Rmd",
+"link": "https://github.com/w201rdada/portfolio-acarl005/edit/master/02.Rmd",
 "text": "Edit"
 },
 "download": null,
