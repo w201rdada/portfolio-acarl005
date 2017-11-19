@@ -15,18 +15,10 @@ library(magrittr)
 
 # Welcome!
 
-<!-- You can include images saved within your repo... -->
-```{r hello-world,echo=FALSE,fig.cap='Hello World!',fig.align='center',out.width='50%'}
-knitr::include_graphics('img/hello-world.png')
-```
-
-Pariatur sapiente anim  waistcoat bicycle rights.  Cupidatat  chambray portland direct trade, XOXO odio gochujang banjo deep v sustainable.  Sint  jianbing DIY humblebrag heirloom exercitation ennui fanny pack.  Dolore small batch lomo, godard slow-carb odio exercitation organic cred cray la croix vinyl nisi hot chicken.  Gentrify schlitz stumptown fam, cray hoodie excepteur  hammock kinfolk 8-bit hell of plaid.  Helvetica hashtag pinterest typewriter, tbh vape vero farm-to-table.  Laboris  bitters aliqua small batch.
-
-<!-- Below this line is just examples of how you can embed video from Google Drive. First you have to enable sharing, then just get the object ID which is that long string between d/ and /preview and will also be appended to any sharing link you generate for your video. -->
-<p>
-```{r hello-benji,echo=FALSE,fig.cap='Hello Benjamin Franklin!',fig.align='center'}
-knitr::include_url('https://drive.google.com/file/d/0B6bobRDQR96iVEV3SXJJal9CczQ/preview')
-```
+This site contains the data-related musings of Andrew Carlson, a student of the (MIDS program) at [Cal Berkeley](http://www.berkeley.edu/).
+These are a couple of ideas I'd like to explore.
+Have any suggestions, comments, or gripes?
+Some links to contact me online can be found on the left.
 
 ### Abstract of "New Drug Development Rules"
 
@@ -52,12 +44,14 @@ In order to build upon the promise of natural language-based virtual assistants,
 we describe the use of Generative Adversarial Networks to simulate human faces and voices to improve their appeal to consumers.
 We describe how we might validate, iterate, and find optimal assistants to increase engagement with the assistant, and ultimately increase sales revenue.
   
-### Abstract of my third cool idea
-
-Activated charcoal succulents ex, pop-up minim neutra pork belly nulla  helvetica semiotics dolor  magna jianbing.  Asymmetrical franzen humblebrag, venmo kale chips offal velit  distillery blog copper mug exercitation pariatur helvetica tacos officia.  Trust fund etsy commodo umami excepteur  lo-fi, locavore humblebrag dolore artisan cliche sustainable chartreuse.  Mustache pork belly kitsch blue bottle jean shorts, intelligentsia hammock consequat hoodie heirloom single-origin coffee.  Godard nulla  yr, cray taxidermy vice pug hashtag ad eiusmod subway tile flexitarian.  Tofu magna laboris  thundercats neutra, mumblecore truffaut small batch hashtag chillwave listicle ramps eiusmod selfies meh.  Bushwick butcher cupidatat  hella organic.
 
 ## About the author
 
-Sustainable aute  gochujang, messenger bag vero dolor  blog pork belly knausgaard.  Tacos brooklyn lumbersexual keytar, literally chambray iceland street art pickled master cleanse in  roof party activated charcoal jean shorts craft beer.  Semiotics tempor enamel pin nesciunt, aliquip live-edge keytar yr street art waistcoat cray everyday carry eu  sint  pariatur.  Aliquip anim  godard leggings, flexitarian direct trade  humblebrag.  Non  ennui fashion axe nesciunt, poke af kinfolk direct trade  franzen banh mi.  Craft beer laborum crucifix pork belly retro, health goth tacos est  godard four dollar toast tousled bushwick exercitation nihil normcore.  Semiotics meggings pok pok church-key whatever art party, truffaut franzen poke.
+```{r hello-world,echo=FALSE,fig.cap='Andrew, a.k.a. "The Code Whisperer"',fig.align='center',out.width='30%'}
+knitr::include_graphics('img/author.jpg')
+```
 
-*Updated: `r Sys.Date()`*
+Andy is a Software Engineer at Stem Disintermedia where he uses the adorable quirks of JavaScript to build systems that help artists release and get paid for their music and video. He touches the whole stack from the React front-end to the PostgreSQL back-end (and even the GraphQL "middle-end"). Before Stem, Andy has been a researcher doing predictive modeling in Python and an instructor at Codesmith. In his free time, he automates things in order to have more free time to automate more things, etc.
+
+
+*Updated: 2017-11-18*
