@@ -4,7 +4,7 @@ author: "Andrew Carlson"
 date: "MIDS Fall 2017"
 site: bookdown::bookdown_site
 documentclass: book
-bibliography: bibliography.bib
+bibliography: references.bib
 link-citations: true
 ---
 
