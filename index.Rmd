@@ -30,6 +30,8 @@ Herein we propose a potential avenue for using more recent advancements in machi
 In order to build upon the promise of natural language-based virtual assistants,
 we describe the use of Generative Adversarial Networks to simulate human faces and voices to improve their appeal to consumers.
 We describe how we might validate, iterate, and find optimal assistants to increase engagement with the assistant, and ultimately increase sales revenue.
+
+<iframe src="https://drive.google.com/file/d/1jtjJx0EKnO5mQ5DcVqOYeN7tsIrrtufp/preview" width="560" height="315" frameborder="0" allowfullscreen></iframe>
   
 ### Abstract of "New Drug Development Rules"
 
@@ -55,4 +57,4 @@ knitr::include_graphics('img/author.jpg')
 Andy is a Software Engineer at Stem Disintermedia where he uses the adorable quirks of JavaScript to build systems that help artists release and get paid for their music and video. He touches the whole stack from the React front-end to the PostgreSQL back-end (and even the GraphQL "middle-end"). Before Stem, Andy has been a researcher doing predictive modeling in Python and an instructor at Codesmith. In his free time, he automates things in order to have more free time to automate more things, etc.
 
 
-*Updated: 2017-11-18*
+*Updated: `r Sys.Date()`*
