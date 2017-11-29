@@ -1,98 +1,110 @@
-# Humanoid Virtual Assistant {#morgan-freeman-assistant}
+# New Drug Development Rules {#drug-rules}
 
 #### Keywords
 
-human, virtual, sales, assistant, retail, generative, neural, network
+medicinal, chemistry, pharmaceutical, drug, development, rules,
 
-## Finding a New Retail Paradigm
+## The Exorbitant Cost of Drug Development
 
-Retailers are constantly seeking and experimenting with advancements in commerce to attract customers.
-Two of the most salient of advancements in past couple of decades is e-commerce [@sales-census],
-using the internet as a platform for buying and selling products and services,
-and data-driven decision-making [@competing-analytics].
-It's innovations like these that enable Amazon.com to beat the classic big-box retailers like Walmart and Target. [@holiday-market-share]
+Pharmaceutical drugs are a cornerstone of modern medicine.
+They are important treatments for many infectious diseases, psychiatric disorders, cancers, diabetes, cardiovascular problems, autoimmune diseases, and more.
+The problem is the enormous cost of research and development in new drugs, which has gotten worse in the 21st century.
+In 2014, it was reported to cost about $2.6 billion to get a new drug on the market—double the cost from 10 years ago (145% increase when adjusted for inflation). [@drug-cost]
+Most of these costs are incurred during the clinical trials, where drugs are vetted for efficacy and safety in humans, and during pre-clinical research, where the drug's structure and function are optimized in order to pass clinical trials.
+Despite these efforts, only about 1 in 10 drugs to enter clinical trials ever get approved. [@drug-approval]
 
-```{r echo=FALSE, out.width='50%', fig.align="center"}
-knitr::include_graphics('./img/amazon-sales.jpeg')
+To give drugs the best possible chance of passing clinical trials, chemists have developed various design principles to use during the optimization process. One of the most widely used principles is [Lipinski's Rule of Five](https://en.wikipedia.org/wiki/Lipinski%27s_rule_of_five).
+Lipinski's Rule was formulated in 1997.
+By following it, chemists increase their chances of producing drug candidates with favorable [pharmacokinetic properties](https://en.wikipedia.org/wiki/Pharmacokinetics).
+This helps reduce the "chemical space," or the set of possible molecules that need to be explored as potential candiates, reducing the number of experiments needed and the costs in turn.
+
+In the past 20 years, new innovations in computing power and machine learning have come forth that provide promising avenues for finding new, more complex rules.
+Machine learning models can be trained to classify favorable pharmacophores with higher fidelity by leveraging lots of existing data on drugs and drug candidates.
+Such a tool can further aid the preclinical research and reduce costs.
+Additionally, more highly optimized candidates might be identified, increasing the likelihood of FDA approval.
+
+## Models for Recognizing "Drug-likeness"
+
+Machine learning models can learn complex, non-linear trends in order to classify numerical inputs.
+The goal is to classify potential drug candidates as having favorable or unfavorable pharmacokinetics.
+Existing data will be used on drugs and drug candidates to train various types of models to predict pharmacokinetic favorableness, or "drug-likeness".
+Models to evaluate include logistic classifiers, random forests (decision trees), and neural networks.
+These models require numerical data as input. Molecules are not easily represented as vectors, as they comprise a graph of bonds between different non-ordinal atomic identities in distinct 3D structures.
+Some methods will also be explored to approximate or capture specific molecular features as matrices.
+
+#### Structural Matrix
+
+An organic molecule's carbon skeleton is often the primary influence for its 3D shape.
+We can represent a carbon chain by placing the carbons as rows and columns in a matrix, $A$ and having the bond order between carbon $i$ and $j$ occupy the cell in $A_{i,j}$
+
+```{r echo=FALSE, out.width='30%'}
+knitr::include_graphics('./img/citric-acid.gif')
 ```
 
-The purpose of this project is to explore potential applications of recent advancements in big data,
-machine learning, and mobile computing in further increasing the engagement and convenience of online retail.
-One emergent technology along these lines is the home virtual assistant, devices that use a "natural language" interface.
-You can command them with your voice in your natural language, as if speaking to another human (sort of).
-Incarnations of this idea include the Amazon Echo and Google Home.
-These devices do more than just tell you the weather and manage your calendar.
-You can give them a credit card and then ask them to make purchases for you—from things like shaving cream, to pizza, and even plane tickets.
+For example, Citric Acid would have the following bond matrix:
 
-```{r echo=FALSE, out.width='50%', fig.align="center"}
-knitr::include_graphics('./img/google-assistant-buy.jpeg')
+$$A = \begin{bmatrix}
+0 & 1 & 0 & 0 & 0 & 0 \\ 
+1 & 0 & 1 & 0 & 0 & 0 \\
+0 & 1 & 0 & 1 & 0 & 1 \\
+0 & 0 & 1 & 0 & 1 & 0 \\
+0 & 0 & 0 & 1 & 0 & 0 \\
+0 & 0 & 1 & 0 & 0 & 0
+\end{bmatrix}$$
+
+#### Functional Group Vector
+
+Another possible numerical representation could be the [functional groups](https://en.wikipedia.org/wiki/Functional_group) present in the molecule.
+In a similar manner to the [Bag-of-words Model](https://en.wikipedia.org/wiki/Bag-of-words_model) in Natural Language Processing, each functional group in a corpus of moecules could be assigned an index number.
+For example:
+
+  1. Carboxylic acid
+  1. Ketone
+  1. Aromatic Ring
+  1. Alcohol
+  1. Amide
+
+By assigning various indices to function groups of interest, the presence and multiplicity of those functional groups can be encoded in the vector. Citric Acid, for example, would be represented as $[\ 3\ 0\ 0\ 1\ 0\ ...\ ]$.
+
+#### Other Possible Representations
+
+Things like the electrical dipoles, locations of electron pairs, and other molecular features could be encoded as matrices.
+
+
+## Capabilities of the Model
+
+The aforementioned matrix representations are all **lossy**.
+No single representation can be used to find the original chemical structure.
+As such, Benzamide and Benzoic acid have the same structural matrix...
+
+```{r echo=FALSE, out.width='30%'}
+knitr::include_graphics('./img/compare-1.png')
 ```
 
-The virtual assistant platform has incredible potential to drive engagement with retailers,
-but these devices have yet to rise to preeminent adoption.
-In order for the virtual assistant platform to live up to this promise,
-the user experience is of paramount importance, and the details matter.
-Is the average consumer really going to enjoy talking to a disembodied, robotic voice?
-What improvements can be made to increase adoption?
-We can look to other tech platforms for ideas on how to increase engagement.
-For example, on the Facebook news feed, people are more likely to view a post if it contains emojis or pictures/videos of people. [@facebook-algorithm]
-Users are drawn to the faces and voices of people, especially those that are familiar.
-In a similar manner, we hypothesize that users will engage more with a personal assistant with a human face and voice—an experience akin to a human conversation.
-This builds upon natural language interfaces and makes them *natural conversations*.
-To create realistic simulations of humans, we can utilize a class of **generative** machine learning models.
-Herein we propose methods for implementing and testing humanoid voice assistants with the goals of driving up user engagement in order to reach the ultimate goal of increasing sales revenue.
+whereas Benzoic Acid and Phenylacetic Acid have the same functional group vector.
 
+```{r echo=FALSE, out.width='30%'}
+knitr::include_graphics('./img/compare-2.png')
+```
 
-## Generative Machine Learning
+These clashes of information can lead to degradation of the predication accuracy.
+However, since Lipinski's rules make predictions from scalar quantities, like weight and solubility, matrices and vectors contain more information.
+These models can therefore be expected to perform well when compared with the current standards.
+There remain other potential sources of error, as there are complexities not captured by the encodings.
+Among them are actual 3D conformations, affinity for *in vivo* metabolic proteins, and the shapes and energies of the molecular orbitals.
 
-We believe a milestone in achieving a better user experience for virtual assistants is to enhance their interactions with realistic faces and voices.
-In order to do this, we can use a class of machine learning models called [Generative Adversarial Networks](https://en.wikipedia.org/wiki/Generative_adversarial_network#cite_note-1) (GAN), proposed in 2014. [@GANs]
-GANs are an unsupervised models that can create new, authentic-looking data based on its training examples.
-This technique has already been demonstrated to create [videos of speeches from President Obama](https://www.theverge.com/2017/7/12/15957844/ai-fake-video-audio-speech-obama). [@obama]
-Generative techniques can be used to project facial movements from any *source actor's* face onto a *target actor*,
-like as President Donald Trump or Vladimir Putin, demonstrated [here](https://www.theverge.com/2016/12/20/14022958/ai-image-manipulation-creation-fakes-audio-video). [@trump]
-
-We can use these techniques to create an audio/video-based assistant to run on their home device or mobile phone.
-Since abundant, good quality video data are required for training,
-prominent Movie or TV stars would be ideal targets as there are many hours of high-resolution video footage of them to train on.
-Models for various types of actors will be trained: males and females, young and old, good and evil
-(we assume actors like Morgan Freeman would be considered more "good" than Christopher Walken because Walken seems to always play the villain).
-
-## Validating the Models
-
-After the GANs optimize the data generation, the videos must be accepted by humans.
-If actual people find the simulations too unrealistic or "creepy," the experiment is doomed to fail.
-Subjects will be shown several video clips of the real actors and the simulated ones without knowing which is which.
-After viewing the clips, they will be asked several questions about the clips.
-"Did any of those videos seem fabricated? If so, which ones? Was there anything off-putting about any of the clips?"
-If the models are accepted, that is, they cannot be distinguished from the real actors with high fidelity, then they can be deployed.
-
-## Deploying the Models
-
-At this point, the goal is to determine if these models can increase engagement and in turn increase sales.
-A cohort of "beta testers" can be recruited to try a hypothetical new virtual home assistant featuring integrations with online stores like Amazon.com.
-One device, the control group, would have a traditional assistant like the Amazon Echo Dot.
-The others will get the humanoid assistant with a video screen that shows the simulated actor.
-Based on the data collected from each interaction and transaction,
-we can examine if the users with the humanoid assistant had more engagement.
-
-**Note:** Consent shall be required to use any model created out of the likeness of any human before using it in production.
-
-## Future Work
-
-If this approach shows feasibility, there are many avenues for further optimization.
-Apart from Morgan Freeman, which types of actors should be shown?
-Are some actors going to be more favored by certain demographics of consumer?
-Can other sensors be used other than just the microphone listening to the users' words?
-Perhaps an infrared face scanner, similar to the technology slated for the iPhone X,
-could be used to gauge the users' reactions from their facial expressions (which may differ from what they **say**).
-
+There is a bias in the data.
+Due to the historical prevalence of Lipinski's rules, chemists tend to make molecules that are compliant with these rules.
+As a result, the data disproportionately represents molecules that conform to those rules, causing a favoritism for those molecules already supported by the existing rules.
+In effect, there is a lack of "exploration".
+The model has not seen enough examples of radically different molecules in order to find broader patterns.
+The model has basically re-learned the same rules.
+In order to combat this, some existing examples might need to be downsampled and more data collected.
 
 ## Conclusion
 
-We have discussed the need to utilize modern technologies to innovate the customer interfaces in e-commerce.
-One promising technology is to evolve natural language interfaces into natural conversations,
-which involve a simulation of a human face and voice, inspired by developments in social media.
-We describe the generative algorithms that could produce candidates for such a virtual assistant.
-This lays the groundwork for testing if such an interface can improve sales online.
+By exploring the various ways to encode molecules as vectors and matrices, they became eligible as inputs for machine learning.
+Several representations including structural, dipolar, and functional information enabled classifiers to select promising candidates for drug optimization.
+These models can enable medicinal chemisty researchers to more judiciously choose which analogs to synthesize and test for drug efficacy.
+Such insights reduce the number of experiments that have to be conducted, bring down costs, and increase the likelihood of clinical trial success.
 

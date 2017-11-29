@@ -21,6 +21,16 @@ These are a couple of ideas I'd like to explore.
 Have any suggestions, comments, or gripes?
 Some links to contact me online can be found on the left.
 
+### Abstract of "Humanoid Virtual Assistant"
+
+The shift to data-driven E-commerce is the most sensational paradigm shift in retail in the past two decades.
+As a result, sites like Amazon.com are now dominating the retail market share,
+beating traditional big-box retailers like Walmart and Target.
+Herein we propose a potential avenue for using more recent advancements in machine learning to further improve the engagement and convenience of the E-commerce platform.
+In order to build upon the promise of natural language-based virtual assistants,
+we describe the use of Generative Adversarial Networks to simulate human faces and voices to improve their appeal to consumers.
+We describe how we might validate, iterate, and find optimal assistants to increase engagement with the assistant, and ultimately increase sales revenue.
+  
 ### Abstract of "New Drug Development Rules"
 
 Pharmaceutical drugs are among the most renowned discoveries in modern medicine.
@@ -35,16 +45,6 @@ The existing rules that are generally used are dated, originating in 1997.
 Using today's affordances in data and computing power, we propose using data science and machine learning to train newer, more complex classifiers for good drug candidates.
 This insight can reduce the costs of researching new drugs, and hopefully get more affordable drugs on the market.
 
-### Abstract of "Humanoid Virtual Assistant"
-
-The shift to data-driven E-commerce is the most sensational paradigm shift in retail in the past two decades.
-As a result, sites like Amazon.com are now dominating the retail market share,
-beating traditional big-box retailers like Walmart and Target.
-Herein we propose a potential avenue for using more recent advancements in machine learning to further improve the engagement and convenience of the E-commerce platform.
-In order to build upon the promise of natural language-based virtual assistants,
-we describe the use of Generative Adversarial Networks to simulate human faces and voices to improve their appeal to consumers.
-We describe how we might validate, iterate, and find optimal assistants to increase engagement with the assistant, and ultimately increase sales revenue.
-  
 
 ## About the author
 
