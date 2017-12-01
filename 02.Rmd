@@ -1,6 +1,6 @@
 # New Drug Development Rules {#drug-rules}
 
-#### Keywords
+#### Keywords {-}
 
 medicinal, chemistry, pharmaceutical, drug, development, rules,
 

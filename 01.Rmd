@@ -1,6 +1,6 @@
 # Humanoid Virtual Assistant {#morgan-freeman-assistant}
 
-#### Keywords
+#### Keywords {-}
 
 human, virtual, sales, assistant, retail, generative, neural, network
 

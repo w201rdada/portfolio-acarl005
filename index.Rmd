@@ -14,14 +14,14 @@ library(magrittr)
 ```
 
 
-# Welcome!
+# Welcome! {-}
 
 This site contains the data-related musings of Andrew Carlson, a student of the [MIDS program](https://www.ischool.berkeley.edu/programs/mids) at [Cal Berkeley](http://www.berkeley.edu/).
 These are a couple of ideas I'd like to explore.
 Have any suggestions, comments, or gripes?
 Some links to contact me online can be found on the left.
 
-### Abstract of "Humanoid Virtual Assistant"
+### Abstract of "Humanoid Virtual Assistant" {-}
 
 The shift to data-driven E-commerce is the most sensational paradigm shift in retail in the past two decades.
 As a result, sites like Amazon.com are now dominating the retail market share,
@@ -33,7 +33,7 @@ We describe how we might validate, iterate, and find optimal assistants to incre
 
 <iframe src="https://drive.google.com/file/d/1jtjJx0EKnO5mQ5DcVqOYeN7tsIrrtufp/preview" width="560" height="315" frameborder="0" allowfullscreen></iframe>
   
-### Abstract of "New Drug Development Rules"
+### Abstract of "New Drug Development Rules" {-}
 
 Pharmaceutical drugs are among the most renowned discoveries in modern medicine.
 For example, antibiotics make short work of infectious diseases that used to bewilder physicians.
@@ -48,7 +48,7 @@ Using today's affordances in data and computing power, we propose using data sci
 This insight can reduce the costs of researching new drugs, and hopefully get more affordable drugs on the market.
 
 
-## About the author
+## About the author {-}
 
 ```{r hello-world,echo=FALSE,fig.cap='Andrew, a.k.a. "The Code Whisperer"',fig.align='center',out.width='30%'}
 knitr::include_graphics('img/author.jpg')
